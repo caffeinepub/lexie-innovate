@@ -1,0 +1,47 @@
+/* Desktop sidebar visibility */
+@media (min-width: 900px) {
+  .desktop-sidebar {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .hidden-mobile {
+    display: flex !important;
+  }
+  .show-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 899px) {
+  .desktop-sidebar {
+    display: none !important;
+  }
+  .hidden-mobile {
+    display: none !important;
+  }
+  .show-mobile {
+    display: flex !important;
+  }
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+
+/* Article body styles */
+article p {
+  margin-bottom: 1.5rem;
+}
+article strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
